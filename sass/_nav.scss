@@ -85,3 +85,46 @@
     text-decoration: none;
   }
 }
+
+@include mq($break-point-md) {
+  .navbar {
+    &-toggle {
+      display: none;
+    }
+
+    &-list {
+      position: relative;
+      top: 0;
+      left: auto;
+      width: auto;
+      transform: translateX(0);
+
+      display: flex !important;
+      flex-direction: row;
+      gap: 20px;
+
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    &-item {
+      padding-block: 0;
+
+      &:last-child {
+        margin: 0 0 0 20px;
+        padding: 0;
+        width: auto;
+        border: none;
+
+        text-align: left;
+
+        list-style: disc;
+        color: $Grayish-Blue;
+
+        a {
+          color: $Grayish-Blue;
+        }
+      }
+    }
+  }
+}

@@ -190,6 +190,38 @@ p {
   text-decoration: none;
 }
 
+@media (min-width: 600px) {
+  .navbar-toggle {
+    display: none;
+  }
+  .navbar-list {
+    position: relative;
+    top: 0;
+    left: auto;
+    width: auto;
+    transform: translateX(0);
+    display: flex !important;
+    flex-direction: row;
+    gap: 20px;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .navbar-item {
+    padding-block: 0;
+  }
+  .navbar-item:last-child {
+    margin: 0 0 0 20px;
+    padding: 0;
+    width: auto;
+    border: none;
+    text-align: left;
+    list-style: disc;
+    color: #a0a1ac;
+  }
+  .navbar-item:last-child a {
+    color: #a0a1ac;
+  }
+}
 .hero-img {
   margin-top: 3.25rem;
   margin-bottom: 85px;
@@ -250,6 +282,18 @@ main button + .text-uppercase {
 
 .attribution {
   margin-top: 100px;
+}
+
+@media (min-width: 600px) {
+  .flex-md {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .main {
+    flex-basis: 75%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
