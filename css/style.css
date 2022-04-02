@@ -295,9 +295,13 @@ main button + .text-uppercase {
     flex-basis: 80%;
   }
 }
-@media (min-width: 800px) {
-  .main {
-    flex-basis: 50%;
+@media (min-width: 960px) {
+  .flex-md > * {
+    flex: 1 1 50%;
+  }
+
+  .px {
+    padding-inline: 5rem;
   }
 }
 

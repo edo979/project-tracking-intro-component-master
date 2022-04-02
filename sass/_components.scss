@@ -84,7 +84,13 @@ main {
 }
 
 @include mq($break-point-lg) {
-  .main {
-    flex-basis: 50%;
+  .flex-md {
+    > * {
+      flex: 1 1 50%;
+    }
+  }
+
+  .px {
+    padding-inline: 5rem;
   }
 }
