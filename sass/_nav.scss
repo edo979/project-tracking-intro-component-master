@@ -4,6 +4,13 @@
   align-items: center;
   justify-content: space-between;
 
+  margin-top: 45px;
+
+  &-logo {
+    width: 25px;
+    height: 25px;
+  }
+
   &-input {
     opacity: 0;
     width: 0;
@@ -38,23 +45,43 @@
 
   &-list {
     position: absolute;
-    bottom: -150px;
-    right: 0;
-    width: 100%;
-    height: 100px;
+    flex-direction: column;
+    align-items: center;
+    top: 55px;
+    left: 50%;
+    width: max(325px, 86vw);
     margin: 0;
-    padding: 0;
+    padding: 1rem;
+    border-radius: 5px;
+    transform: translateX(-50%);
     z-index: 0;
 
-    flex-direction: column;
+    list-style: none;
 
-    &::before {
-      position: absolute;
-      content: '';
-      height: 100vw;
-      width: 100vh;
-      background-color: $Light-Grayish-Blue;
-      z-index: -1;
+    background-color: white;
+    box-shadow: 0 2px 30px rgba($color: #000000, $alpha: 0.15);
+  }
+
+  &-item {
+    padding-block: 0.5rem;
+
+    &:last-child {
+      margin-top: 0.75rem;
+      padding: 1.25rem 0 0;
+      width: 100%;
+      text-align: center;
+      border-top: 2px solid $Light-Grayish-Blue;
+      a {
+        color: $Grayish-Blue;
+      }
     }
+  }
+
+  &-link {
+    font-weight: 700;
+    color: $Very-Dark-Blue;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
   }
 }

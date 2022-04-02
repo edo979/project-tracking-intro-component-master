@@ -1,0 +1,24 @@
+.hero-img {
+  margin-top: 3.25rem;
+  margin-bottom: 85px;
+  width: 100%;
+  height: 240px;
+
+  background-image: url(../images/illustration-devices.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 420px;
+    border-bottom-left-radius: 70px;
+    z-index: -1;
+
+    background-color: $Red-200;
+  }
+}
