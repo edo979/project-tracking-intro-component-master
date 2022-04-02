@@ -13,20 +13,38 @@ body {
 
 h1,
 .btn,
-.navbar-link {
+.navbar-link,
+.badge,
+.text-uppercase {
   font-family: $ff-Barlow-Condensed;
 }
 
 h1,
 .h1 {
+  text-transform: uppercase;
+  line-height: 1;
   color: $Very-Dark-Blue;
 }
 
 p {
   color: $Dark-Grayish-Blue;
+  font-size: 1.025rem;
+}
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+
+  font-weight: 700;
+  font-size: 0.77rem;
+  letter-spacing: 1px;
+  line-height: 1;
 }
 
 .text-uppercase {
+  font-size: 0.79rem;
   text-transform: uppercase;
+  letter-spacing: 4px;
+
   color: $Grayish-Blue;
 }
