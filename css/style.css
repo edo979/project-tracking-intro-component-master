@@ -101,4 +101,51 @@ p {
   color: #a0a1ac;
 }
 
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.navbar input:checked + label .navbar-open {
+  display: none;
+}
+.navbar input:checked + label .navbar-close {
+  display: block;
+}
+.navbar input:checked ~ .navbar-list {
+  display: flex;
+}
+.navbar input + label .navbar-close {
+  display: none;
+}
+.navbar input ~ .navbar-list {
+  display: none;
+}
+.navbar-list {
+  position: absolute;
+  bottom: -150px;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+  flex-direction: column;
+}
+.navbar-list::before {
+  position: absolute;
+  content: "";
+  height: 100vw;
+  width: 100vh;
+  background-color: #eef3f6;
+  z-index: -1;
+}
+
 /*# sourceMappingURL=style.css.map */
