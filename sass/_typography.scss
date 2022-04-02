@@ -16,3 +16,17 @@ h1,
 .navbar-link {
   font-family: $ff-Barlow-Condensed;
 }
+
+h1,
+.h1 {
+  color: $Very-Dark-Blue;
+}
+
+p {
+  color: $Dark-Grayish-Blue;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+  color: $Grayish-Blue;
+}

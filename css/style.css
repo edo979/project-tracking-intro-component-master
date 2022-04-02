@@ -87,4 +87,18 @@ h1,
   font-family: "Barlow Condensed", sans-serif;
 }
 
+h1,
+.h1 {
+  color: #242942;
+}
+
+p {
+  color: #5b5f71;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+  color: #a0a1ac;
+}
+
 /*# sourceMappingURL=style.css.map */
