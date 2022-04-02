@@ -79,9 +79,12 @@ main {
   }
 
   .main {
-    flex-basis: 75%;
+    flex-basis: 80%;
   }
 }
 
 @include mq($break-point-lg) {
+  .main {
+    flex-basis: 50%;
+  }
 }

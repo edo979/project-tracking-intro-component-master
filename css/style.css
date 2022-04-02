@@ -190,7 +190,7 @@ p {
   text-decoration: none;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 525px) {
   .navbar-toggle {
     display: none;
   }
@@ -284,7 +284,7 @@ main button + .text-uppercase {
   margin-top: 100px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 525px) {
   .flex-md {
     display: flex;
     flex-direction: row-reverse;
@@ -292,7 +292,12 @@ main button + .text-uppercase {
   }
 
   .main {
-    flex-basis: 75%;
+    flex-basis: 80%;
+  }
+}
+@media (min-width: 800px) {
+  .main {
+    flex-basis: 50%;
   }
 }
 
