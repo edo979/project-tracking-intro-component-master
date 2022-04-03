@@ -88,6 +88,11 @@
 
 @include mq($break-point-md) {
   .navbar {
+    &-logo {
+      width: 30px;
+      height: 30px;
+    }
+
     &-toggle {
       display: none;
     }
@@ -123,6 +128,24 @@
 
         a {
           color: $Grayish-Blue;
+        }
+      }
+    }
+  }
+}
+
+@include mq($break-point-lg) {
+  .navbar {
+    margin-top: 2.7rem;
+
+    &-list {
+      gap: 40px;
+    }
+
+    &-item {
+      &:last-child {
+        a {
+          margin-left: 20px;
         }
       }
     }

@@ -117,6 +117,17 @@ p {
   color: #a0a1ac;
 }
 
+@media (min-width: 960px) {
+  h1,
+.h1 {
+    font-size: clamp(2.5rem, 4vw + 0.5rem, 3.55rem);
+  }
+
+  .badge,
+.text-uppercase {
+    font-size: 0.85rem;
+  }
+}
 .px {
   padding-inline: 30px;
 }
@@ -191,6 +202,10 @@ p {
 }
 
 @media (min-width: 525px) {
+  .navbar-logo {
+    width: 30px;
+    height: 30px;
+  }
   .navbar-toggle {
     display: none;
   }
@@ -220,6 +235,17 @@ p {
   }
   .navbar-item:last-child a {
     color: #a0a1ac;
+  }
+}
+@media (min-width: 960px) {
+  .navbar {
+    margin-top: 2.7rem;
+  }
+  .navbar-list {
+    gap: 40px;
+  }
+  .navbar-item:last-child a {
+    margin-left: 20px;
   }
 }
 .hero-img {
@@ -291,8 +317,18 @@ main button + .text-uppercase {
     align-items: center;
   }
 
+  .flex-md,
+.navbar,
+.footer {
+    margin-inline: auto;
+  }
+
+  .hero-img {
+    flex: 1 1 40%;
+  }
+
   .main {
-    flex-basis: 80%;
+    flex: 1 1 60%;
   }
 }
 @media (min-width: 960px) {
@@ -300,8 +336,36 @@ main button + .text-uppercase {
     flex: 1 1 50%;
   }
 
+  .flex-md,
+.navbar,
+.footer {
+    max-width: 1440px;
+  }
+
+  .btn {
+    font-size: 0.95rem;
+    padding: 1rem 2rem;
+  }
+
   .px {
-    padding-inline: 5rem;
+    padding-inline: 165px;
+  }
+
+  .pe-lg-0 {
+    padding-inline-end: 0;
+  }
+
+  .hero-img {
+    height: 465px;
+    margin-top: 5.45rem;
+  }
+
+  main > p {
+    margin: 1.75rem 0 3.5rem !important;
+    padding-inline-end: clamp(0.5rem, 17.6vw, 15rem);
+  }
+  main button + .text-uppercase {
+    letter-spacing: 5px;
   }
 }
 

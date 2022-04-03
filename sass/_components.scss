@@ -78,8 +78,18 @@ main {
     align-items: center;
   }
 
+  .flex-md,
+  .navbar,
+  .footer {
+    margin-inline: auto;
+  }
+
+  .hero-img {
+    flex: 1 1 40%;
+  }
+
   .main {
-    flex-basis: 80%;
+    flex: 1 1 60%;
   }
 }
 
@@ -90,7 +100,38 @@ main {
     }
   }
 
+  .flex-md,
+  .navbar,
+  .footer {
+    max-width: 1440px;
+  }
+
+  .btn {
+    font-size: 0.95rem;
+    padding: 1rem 2rem;
+  }
+
   .px {
-    padding-inline: 5rem;
+    padding-inline: 165px;
+  }
+
+  .pe-lg-0 {
+    padding-inline-end: 0;
+  }
+
+  .hero-img {
+    height: 465px;
+    margin-top: 5.45rem;
+  }
+
+  main {
+    > p {
+      margin: 1.75rem 0 3.5rem !important;
+      padding-inline-end: clamp(0.5rem, 17.6vw, 15rem);
+    }
+
+    button + .text-uppercase {
+      letter-spacing: 5px;
+    }
   }
 }
