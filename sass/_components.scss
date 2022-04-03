@@ -56,6 +56,13 @@
   text-transform: uppercase;
 
   background-color: $Red;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $Red-300;
+  }
 }
 
 main {

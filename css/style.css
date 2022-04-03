@@ -200,6 +200,9 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
+.navbar-link:hover, .navbar-link:focus {
+  text-decoration: underline;
+}
 
 @media (min-width: 525px) {
   .navbar-logo {
@@ -297,6 +300,10 @@ p {
   line-height: 1;
   text-transform: uppercase;
   background-color: #ff5c5c;
+  cursor: pointer;
+}
+.btn:hover, .btn:focus {
+  background-color: #ff8080;
 }
 
 main button {
